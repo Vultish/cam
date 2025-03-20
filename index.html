@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="dot-container" id="toogle">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <h1>Facebook</h1>
+
+        <div class="line"></div>
+
+        <div class="profile"><img src="profile.jpg" alt="" class="logo">
+            <div class="profile-text">
+                <h2>Vultish</h2>
+            <p class="account">Hesabım</p>
+        </div>
+
+        <span class="toggle-box"><i class="fa-solid fa-plus"></i></span>
+    </div>
+
+        <div class="line"></div>
+        <p class="menu">Menu</p>
+
+        <ul>
+            <li class="bar"><i class="fa-solid fa-house"></i><span>Ana Sayfa</span></li>
+            <li class="bar"><i class="fa-solid fa-pen-to-square"></i><span>Gönderiler</span></li>
+            <li class="bar"><i class="fa-solid fa-comment-dots"></i><span>Mesajlar</span></li>
+            <li class="bar"><i class="fa-solid fa-user-group"></i><span>Arkadaşlar</span></li>
+            <li class="bar"><i class="fa-solid fa-bell"></i><span>Bildirimler <i class="not-num"></i>2</span></li>
+            <li class="bar"><i class="fa-solid fa-people-group"></i><span>Grup</span></li>
+            <li class="bar"><i class="fa-solid fa-gear"></i><span>Ayarlar</span></li>
+        </ul>
+        <div class="line" style="position: relative; top: 5px;"></div>
+        <div class="logout-container">
+            <i class="fa-solid fa-arrow-right-from-bracket" style="position: relative; left:0; top: 20px; font-size: 24px;"></i>
+            <p class="logout-txt">Çıkış</p>
+        </div>
+    </div>
+    <script>
+        runEventListeners();
+        function runEventListeners(){
+            document.getElementById("toogle").addEventListener("click",toggle);
+        }
+        function toggle(){
+            document.getElementById("container").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
